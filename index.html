@@ -4,11 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Tea House</h1>
-    <h2>this is a tailwind project</h2>
-    <h1>Hi add new page now</h1>
-    <h1>this is anis i also added some code</h1>
+    <header
+      class="banner space-y-8 bg-sky-100 lg:w-10/12 mx-auto lg:flex justify-around items-center"
+    >
+      <div class="teaInfo lg:w-6/12 space-y-2 text-center">
+        <h1>Tea House</h1>
+        <h2>this is a tailwind project</h2>
+        <h1>Hi add new page now</h1>
+        <h1>this is anis i also added some code</h1>
+        <button class="btn btn-warning">Buy a copy</button>
+      </div>
+      <div class="teaCup w-6/12 mx-auto">
+        <img class="lg:w-9/12" src="./images/banner.png" alt="" />
+        <div
+          class="flex items-center bg-white w-7/12 lg:w-5/12 p-1 lg:p-3 rounded gap-2 relative -top-10"
+        >
+          <div>
+            <i class="fas fa-star text-xl text-orange-500"></i>
+          </div>
+          <div>
+            <h3>5.00</h3>
+            <small>Trust Pilot Rating</small>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- presentation section -->
+      <div class="lg:w-10/12 mx-auto lg:flex justify-between my-10">
+        <div
+          class="tea lg:w-4/12 grid grid-cols-4 grid-rows-3 border-2 gap-4 h-[400px]"
+        >
+          <div class="bg-red-500 p-2 rounded col-span-2 row-span-2">
+            <img class="" src="./images/tea-1.png" alt="" />
+          </div>
+          <div class="bg-green-400 p-2 rounded col-span-2">item 2</div>
+          <div class="bg-pink-400 p-2 rounded col-span-2 row-span-2">
+            <img class="" src="./images/tea-1.png" alt="" />
+          </div>
+          <div class="bg-green-400 p-2 rounded col-span-2">item 4</div>
+        </div>
+        <div class="detail lg:w-6/12">
+          <h1>Grate tea fresh presentation</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            fuga in ratione, dicta at quos.
+          </p>
+          <br />
+          <h2>unique tea</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, autem!
+          </p>
+          <br />
+          <h2>unique tea</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, autem!
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
